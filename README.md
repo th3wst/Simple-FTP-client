@@ -23,7 +23,8 @@ A lightweight, GUI-based FTP file-sharing client and server application. This pr
 
 1. Click the **Set Up Credentials** button.
 2. Enter a username and password for your FTP server.
-3. Credentials are securely hashed and stored in a configuration file.
+3. The credentials will be securely hashed and stored in the **AppData** directory:
+   - Example: `C:\Users\<YourUsername>\AppData\Local\ezFTP\ftp_credentials.cfg` (Windows).
 
 ### Start the FTP Server
 
@@ -46,7 +47,7 @@ A lightweight, GUI-based FTP file-sharing client and server application. This pr
 
 - The FTP server runs locally and is accessible only within your local network.
 - Ensure your firewall settings allow traffic on the selected port to enable successful connections.
-- Credentials are hashed with bcrypt for enhanced security.
+- Credentials are hashed with bcrypt for enhanced security and are stored in the **AppData** directory.
 - If you encounter issues, ensure the `ftp_credentials.cfg` file exists in the application's data directory.
 
 ## System Requirements
