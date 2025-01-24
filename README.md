@@ -25,7 +25,7 @@ A lightweight, GUI-based FTP file sharing client and server application. This pr
 ### Start the FTP Server
 
 1. Click the "Start Server" button.
-2. The server will start running, and the application will display the server's IP address along with the username and password for accessing it.
+2. The server will start running, and the application will display the server's IP address and username.
 
 ### Upload Files
 
