@@ -8,7 +8,7 @@ A lightweight, GUI-based FTP file-sharing client and server application. This pr
 - **Start Server**: Launch a local FTP server with custom port options and secure file handling.
 - **Stop Server**: Easily stop the FTP server when it's no longer needed.
 - **File Upload**: Upload multiple files to the server using a graphical file selection dialog.
-- **Secure File Handling**: Files are securely stored in the dedicated `uploaded_files` directory.
+- **File Handling**: Files are stored in the dedicated `uploaded_files` directory.
 - **Port Configuration**: Customize the port number for the FTP server to fit your network requirements.
 
 ## How to Use
