@@ -9,7 +9,6 @@ A lightweight, GUI-based FTP file-sharing client and server application. This pr
 - **Stop Server**: Easily stop the FTP server when it's no longer needed.
 - **File Upload**: Upload multiple files to the server using a graphical file selection dialog.
 - **Secure File Handling**: Files are securely stored in the dedicated `uploaded_files` directory.
-- **User Feedback**: Real-time status and progress updates for server actions and file uploads.
 - **Port Configuration**: Customize the port number for the FTP server to fit your network requirements.
 
 ## How to Use
@@ -40,7 +39,6 @@ A lightweight, GUI-based FTP file-sharing client and server application. This pr
 ### Upload Files
 
 1. Click the **Upload Files** button to select files from your computer.
-2. Authenticate using your credentials and watch the real-time progress bar as files are uploaded.
 3. Files are stored in the `uploaded_files` directory on the server.
 
 ## Notes
