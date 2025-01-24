@@ -92,7 +92,6 @@ def start_ftp_server():
     start_button.config(state=tk.DISABLED)
     upload_button.config(state=tk.NORMAL)
 
-
 def upload_files():
     file_paths = filedialog.askopenfilenames(filetypes=[("All Files", "*.*")])
 
@@ -102,7 +101,13 @@ def upload_files():
     from ftplib import FTP
 
     ftp = FTP(get_local_ip())
-    ftp.login(ftp_username, ftp_hashed_password)
+
+    entered_password = simpledialog.askstring("Enter FTP Password", "Enter password for user:")
+    if not entered_password or not check_password(entered_password, ftp_hashed_password):
+        messagebox.showerror("Error", "Invalid password. Unable to log in.")
+        return
+
+    ftp.login(ftp_username, entered_password)
 
     for file_path in file_paths:
         with open(file_path, 'rb') as file:
